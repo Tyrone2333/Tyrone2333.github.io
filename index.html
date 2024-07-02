@@ -72,6 +72,55 @@
       <div class="outer">
         <section id="main">
   
+    <article id="post-pt下载软件遇到的问题" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2024/07/02/pt%E4%B8%8B%E8%BD%BD%E8%BD%AF%E4%BB%B6%E9%81%87%E5%88%B0%E7%9A%84%E9%97%AE%E9%A2%98/" class="article-date">
+  <time class="dt-published" datetime="2024-07-02T09:00:11.000Z" itemprop="datePublished">2024-07-02</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="p-name article-title" href="/2024/07/02/pt%E4%B8%8B%E8%BD%BD%E8%BD%AF%E4%BB%B6%E9%81%87%E5%88%B0%E7%9A%84%E9%97%AE%E9%A2%98/">pt下载软件遇到的问题</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <h1 id="qBittorrent"><a href="#qBittorrent" class="headerlink" title="qBittorrent"></a>qBittorrent</h1><h2 id="qBittorrent-WebUI-打不开"><a href="#qBittorrent-WebUI-打不开" class="headerlink" title="qBittorrent WebUI 打不开"></a>qBittorrent WebUI 打不开</h2><p>WebUI 皮肤路径一般是包含有 &#x2F;public 的那层,如果不小心设置了错的路径，导致 WebUI 打不开，需要修改配置文件</p>
+<p>测试发现直接改正确路径无效, 只能先回默认 UI, 在后台设置里修改路径</p>
+<p>修改之前一定要把QB先停止了 然后再修改.</p>
+<p>配置文件路径参考：&#x2F;volume1&#x2F;@appdata&#x2F;qBittorrent&#x2F;qBittorrent_conf&#x2F;config&#x2F;</p>
+<p>在[Preferences]下<br>把WebUI\AlternativeUIEnabled&#x3D;true<br>改为<br>WebUI\AlternativeUIEnabled&#x3D;false</p>
+<h1 id="transmission"><a href="#transmission" class="headerlink" title="transmission"></a>transmission</h1><h2 id="transmission-修改密码"><a href="#transmission-修改密码" class="headerlink" title="transmission 修改密码"></a>transmission 修改密码</h2><p>sudo -i获取root账户权限</p>
+<p>vim &#x2F;volume1&#x2F;@appdata&#x2F;transmission&#x2F;settings.json</p>
+<p>默认的配置：<br>“rpc-password”: “{63f0220ad29c3e7e23c810bf5ba61c20d4e222631wsWz5Mi”,<br>“rpc-username”: “admin”,</p>
+<p>后面引号内就是经过加密的密码，不要管他怎么加密的，直接把引号内的内容修改为你的新密码就可以了，比如”rpc-password”:”xxorg.com”<br>然后按 <code>ESC</code> 键，输入 :wq</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://tyrone2333.github.io/2024/07/02/pt%E4%B8%8B%E8%BD%BD%E8%BD%AF%E4%BB%B6%E9%81%87%E5%88%B0%E7%9A%84%E9%97%AE%E9%A2%98/" data-id="cly46n4rq0000jbcn98k8ewee" data-title="pt下载软件遇到的问题" class="article-share-link"><span class="fa fa-share">Teilen</span></a>
+      
+      
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Transmission/" rel="tag">Transmission</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/pt/" rel="tag">pt</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/qBittorrent/" rel="tag">qBittorrent</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+
+  
     <article id="post-实现一个像安卓彩蛋的隐藏功能" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
   <div class="article-meta">
     <a href="/2020/08/21/%E5%AE%9E%E7%8E%B0%E4%B8%80%E4%B8%AA%E5%83%8F%E5%AE%89%E5%8D%93%E5%BD%A9%E8%9B%8B%E7%9A%84%E9%9A%90%E8%97%8F%E5%8A%9F%E8%83%BD/" class="article-date">
@@ -129,7 +178,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://tyrone2333.github.io/2020/08/21/%E5%AE%9E%E7%8E%B0%E4%B8%80%E4%B8%AA%E5%83%8F%E5%AE%89%E5%8D%93%E5%BD%A9%E8%9B%8B%E7%9A%84%E9%9A%90%E8%97%8F%E5%8A%9F%E8%83%BD/" data-id="cly45de9e0001jqcnfd8nbdym" data-title="实现一个像安卓彩蛋的隐藏功能" class="article-share-link"><span class="fa fa-share">Teilen</span></a>
+      <a data-url="https://tyrone2333.github.io/2020/08/21/%E5%AE%9E%E7%8E%B0%E4%B8%80%E4%B8%AA%E5%83%8F%E5%AE%89%E5%8D%93%E5%BD%A9%E8%9B%8B%E7%9A%84%E9%9A%90%E8%97%8F%E5%8A%9F%E8%83%BD/" data-id="cly45r21m0001wucn2wvo6baw" data-title="实现一个像安卓彩蛋的隐藏功能" class="article-share-link"><span class="fa fa-share">Teilen</span></a>
       
       
       
@@ -183,7 +232,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://tyrone2333.github.io/2019/03/28/%E6%B6%88%E6%81%AF%E5%88%97%E8%A1%A8%E5%90%91%E4%B8%8A%E6%BB%9A%E5%8A%A8%E5%8A%A0%E8%BD%BD/" data-id="cly45de9r0004jqcnax9mbub4" data-title="消息列表向上滚动加载" class="article-share-link"><span class="fa fa-share">Teilen</span></a>
+      <a data-url="https://tyrone2333.github.io/2019/03/28/%E6%B6%88%E6%81%AF%E5%88%97%E8%A1%A8%E5%90%91%E4%B8%8A%E6%BB%9A%E5%8A%A8%E5%8A%A0%E8%BD%BD/" data-id="cly45r2200004wucneaau2pue" data-title="消息列表向上滚动加载" class="article-share-link"><span class="fa fa-share">Teilen</span></a>
       
       
       
@@ -232,7 +281,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://tyrone2333.github.io/2019/03/28/post-asset-folder/" data-id="cly45de970000jqcnbme442jo" data-title="hexo 引入图片问题" class="article-share-link"><span class="fa fa-share">Teilen</span></a>
+      <a data-url="https://tyrone2333.github.io/2019/03/28/post-asset-folder/" data-id="cly45r21f0000wucnegepfa7j" data-title="hexo 引入图片问题" class="article-share-link"><span class="fa fa-share">Teilen</span></a>
       
       
       
@@ -277,7 +326,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://tyrone2333.github.io/2018/12/29/%E8%A7%A3%E6%9E%90%E5%88%B0%E8%87%AA%E5%B7%B1%E7%9A%84%E5%9F%9F%E5%90%8D/" data-id="cly45de9k0002jqcnbitjghrw" data-title="github page 解析到自己的域名" class="article-share-link"><span class="fa fa-share">Teilen</span></a>
+      <a data-url="https://tyrone2333.github.io/2018/12/29/%E8%A7%A3%E6%9E%90%E5%88%B0%E8%87%AA%E5%B7%B1%E7%9A%84%E5%9F%9F%E5%90%8D/" data-id="cly45r21r0002wucndbn33wxl" data-title="github page 解析到自己的域名" class="article-share-link"><span class="fa fa-share">Teilen</span></a>
       
       
       
@@ -302,7 +351,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">Tags</h3>
     <div class="widget">
-      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/flutter/" rel="tag">flutter</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E4%B8%8B%E6%8B%89%E5%8A%A0%E8%BD%BD/" rel="tag">下拉加载</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%BD%A9%E8%9B%8B/" rel="tag">彩蛋</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E6%B6%88%E6%81%AF%E5%88%97%E8%A1%A8/" rel="tag">消息列表</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E6%BB%9A%E5%8A%A8%E5%8A%A0%E8%BD%BD/" rel="tag">滚动加载</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E9%9A%90%E8%97%8F%E5%8A%9F%E8%83%BD/" rel="tag">隐藏功能</a></li></ul>
+      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/Transmission/" rel="tag">Transmission</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/flutter/" rel="tag">flutter</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/pt/" rel="tag">pt</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/qBittorrent/" rel="tag">qBittorrent</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E4%B8%8B%E6%8B%89%E5%8A%A0%E8%BD%BD/" rel="tag">下拉加载</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%BD%A9%E8%9B%8B/" rel="tag">彩蛋</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E6%B6%88%E6%81%AF%E5%88%97%E8%A1%A8/" rel="tag">消息列表</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E6%BB%9A%E5%8A%A8%E5%8A%A0%E8%BD%BD/" rel="tag">滚动加载</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E9%9A%90%E8%97%8F%E5%8A%9F%E8%83%BD/" rel="tag">隐藏功能</a></li></ul>
     </div>
   </div>
 
@@ -312,7 +361,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">Tag Cloud</h3>
     <div class="widget tagcloud">
-      <a href="/tags/flutter/" style="font-size: 10px;">flutter</a> <a href="/tags/%E4%B8%8B%E6%8B%89%E5%8A%A0%E8%BD%BD/" style="font-size: 10px;">下拉加载</a> <a href="/tags/%E5%BD%A9%E8%9B%8B/" style="font-size: 10px;">彩蛋</a> <a href="/tags/%E6%B6%88%E6%81%AF%E5%88%97%E8%A1%A8/" style="font-size: 10px;">消息列表</a> <a href="/tags/%E6%BB%9A%E5%8A%A8%E5%8A%A0%E8%BD%BD/" style="font-size: 10px;">滚动加载</a> <a href="/tags/%E9%9A%90%E8%97%8F%E5%8A%9F%E8%83%BD/" style="font-size: 10px;">隐藏功能</a>
+      <a href="/tags/Transmission/" style="font-size: 10px;">Transmission</a> <a href="/tags/flutter/" style="font-size: 10px;">flutter</a> <a href="/tags/pt/" style="font-size: 10px;">pt</a> <a href="/tags/qBittorrent/" style="font-size: 10px;">qBittorrent</a> <a href="/tags/%E4%B8%8B%E6%8B%89%E5%8A%A0%E8%BD%BD/" style="font-size: 10px;">下拉加载</a> <a href="/tags/%E5%BD%A9%E8%9B%8B/" style="font-size: 10px;">彩蛋</a> <a href="/tags/%E6%B6%88%E6%81%AF%E5%88%97%E8%A1%A8/" style="font-size: 10px;">消息列表</a> <a href="/tags/%E6%BB%9A%E5%8A%A8%E5%8A%A0%E8%BD%BD/" style="font-size: 10px;">滚动加载</a> <a href="/tags/%E9%9A%90%E8%97%8F%E5%8A%9F%E8%83%BD/" style="font-size: 10px;">隐藏功能</a>
     </div>
   </div>
 
@@ -321,7 +370,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">Archiv</h3>
     <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/08/">August 2020</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/03/">March 2019</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/12/">December 2018</a></li></ul>
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2024/07/">July 2024</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/08/">August 2020</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/03/">March 2019</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/12/">December 2018</a></li></ul>
     </div>
   </div>
 
@@ -332,6 +381,10 @@
     <h3 class="widget-title">letzter Beitrag</h3>
     <div class="widget">
       <ul>
+        
+          <li>
+            <a href="/2024/07/02/pt%E4%B8%8B%E8%BD%BD%E8%BD%AF%E4%BB%B6%E9%81%87%E5%88%B0%E7%9A%84%E9%97%AE%E9%A2%98/">pt下载软件遇到的问题</a>
+          </li>
         
           <li>
             <a href="/2020/08/21/%E5%AE%9E%E7%8E%B0%E4%B8%80%E4%B8%AA%E5%83%8F%E5%AE%89%E5%8D%93%E5%BD%A9%E8%9B%8B%E7%9A%84%E9%9A%90%E8%97%8F%E5%8A%9F%E8%83%BD/">实现一个像安卓彩蛋的隐藏功能</a>
